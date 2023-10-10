@@ -15,7 +15,7 @@ if __name__ == "__main__":
         data = parse_api_response(response)
 
         if data is not None:
-            # Convert the data to a DataFrame (replace with actual parsing logic)
+            # Convert the data to a DataFrame 
             df = pd.DataFrame(data)
 
             # Export the data to a CSV file
@@ -31,7 +31,7 @@ import requests
 def make_api_request(api_url):
     try:
         response = requests.get(api_url)
-        response.raise_for_status()  # Raise an exception for 4xx or 5xx status codes
+        response.raise_for_status() 
         return response
     except requests.exceptions.RequestException as e:
         print(f"Error: {str(e)}")
